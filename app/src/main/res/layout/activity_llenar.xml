@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText android:id="@+id/et_name"
+        android:layout_marginTop="20dp"
+        android:hint="Escriba sus nombres"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+
+    <EditText android:id="@+id/et_lastname"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Escriba sus apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+
+    <EditText android:id="@+id/et_age"
+        android:layout_below="@id/et_lastname"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="Escriba su edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btn_save"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_age"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
